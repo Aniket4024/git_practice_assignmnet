@@ -1,12 +1,22 @@
-let N=13;
-for(i=0;i<=N;i++){
+let N=15;
+
+function prime(N){
+	for(i=1;i<=N;i++){
 	if(N%i===0){
 		count++;
 	}
+  }
+  if(count===2){
+	return true
+  }
+  else{	
+      return false
+  }
 }
-if(count===3){
-	console.log();
-}
-else{
- console.log();
+
+let ans = prime(N)
+if(ans == true){
+	console.log(ans,"is a prime number)
+}else{
+	console.log(ans,"is not a prime number)
 }
